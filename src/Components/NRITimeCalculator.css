@@ -1,133 +1,158 @@
+/* NRITimeCalculator.css */
 .nri-calculator-container {
-  margin: auto;
-  padding: 20px;
-  font-family: sans-serif; /* Use a common font */
+  margin: 20px; /* Consistent margin */
+  font-family: sans-serif;
 }
 
 .financial-year-dropdown {
-  margin-bottom: 5px; /* Space below the dropdown */
-  display: flex; /* Align items in a row */
-  align-items: flex-start;
-  padding-left: 200px;
+  margin-bottom: 10px; /* Increased margin */
+  display: flex;
+  justify-content: center; /* Center the dropdown */
+  width: 100%; /* Full width on mobile */
+  box-sizing: border-box; /* Include padding and border in width */
+  padding: 0px 10px;
 }
 
-.menu-button { /* Style for the financial year dropdown */
-    padding: 8px 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
+.menu-button {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box; /* Include padding and border in width */
+  
 }
 
 .dashboard {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  padding: 10px;
-  width: 100%; 
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  margin-bottom: 20px; /* Space below dashboard */
 }
+
 .nri-days {
- font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 40px;
+  font-size: 2em; /* Use relative units */
   font-weight: bold;
   color: #906d6d;
-  margin: 5px;
-  padding: 2px;
-  white-space: pre-wrap;
-
+  margin: 10px 0; /* Consistent margin */
+  text-align: center; /* Center the text */
 }
-.nri-status{
+
+.nri-status {
   color: #e63e19;
+  font-size: 1.2em; /* Relative size */
 }
 
 .days-needed {
-  margin: 5px;
-  padding: 2px;
-  font-size: 18px;
+  margin: 10px 0;
+  font-size: 1.2em;
   font-weight: bold;
+  text-align: center; /* Center the text */
 }
-.NoTrip{
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 30px;
+
+.NoTrip {
+  font-size: 1.5em;
   color: #333;
-  margin: 10px 0px 20px 0px;
-  
+  margin: 20px auto; /* Center horizontally */
+  text-align: center; /* Center the text */
 }
 
 .trip-list {
-      display: flex;
-      flex-direction: column;
-      width: 540px;
-      align-self: center;
-      justify-content: center;
-      margin: auto;
-      padding: 10px;
-      border-radius: 20px;
-  
+  width: 95%; /* Occupy most of the width */
+  max-width: 600px; /* Set a maximum width */
+  margin: 20px auto; /* Center horizontally */
+  overflow-x: auto; /* Add horizontal scroll if needed */
 }
-.TripListHeading{
-  font-family:Arial, Helvetica, sans-serif;
-  color: #333;
-  margin: 10px 0px 10px 0px;
 
+.TripListHeading {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center; /* Center the text */
 }
 
 .trip-list table {
+  width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
 }
 
 .trip-list th,
 .trip-list td {
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #ccc;
-  text-align: left; /* Align text to the left by default */
+  text-align: left;
+  font-size: 0.9em; /* Smaller font size for table data */
 }
 
 .add-trip {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ccc;
-  width: 500px;
-  align-self: center;
-  justify-content: center;
-  margin: auto;
+  width: 95%; /* Occupy most of the width */
+  max-width: 500px; /* Set a maximum width */
+  margin: 20px auto; /* Center horizontally */
   padding: 20px;
-  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Include padding and border in width */
 }
 
 .add-trip label {
   margin-bottom: 5px;
-  padding: 0px 50px;
+  display: block; /* Place labels above inputs */
+  text-align: center; /* Align labels to the left */
 }
 
 .add-trip input[type="date"],
 .add-trip input[type="text"],
 .add-trip input[type="checkbox"] {
-  padding: 8px 100px;
- 
-  align-self: center;
+  width: calc(100% - 110px); /* Full width input fields, adjust as needed */
+  padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  box-sizing: border-box;
+}
+.add-trip input[type="checkbox"] {
+  width: auto; /* Auto width for checkboxes */
+  margin-right: 5px; /* Space between checkbox and label */
+  
 }
 
 .add-trip button {
   padding: 10px 15px;
-  background-color: #007bff; /* Blue button */
+  background-color: #007bff;
   color: white;
   border: none;
-  align-self: center;
-  width: 310px;
+  width: 100%; /* Full width button */
   border-radius: 8px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .add-trip button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
 
 
 
+/* Media Queries for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .NriHeading {
+    font-size: 1.5em;
+  }
 
+  .trip-list th,
+  .trip-list td {
+    font-size: 0.8em; /* Smaller font size for table data */
+    padding: 8px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .nri-days {
+    font-size: 1.5em;
+  }
+  .trip-list th,
+  .trip-list td {
+    font-size: 0.7em; /* Smaller font size for table data */
+    padding: 6px; /* Reduce padding */
+  }
+}
