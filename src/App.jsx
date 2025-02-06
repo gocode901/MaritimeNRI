@@ -1,6 +1,6 @@
 import "./App.css";
 // import NRITimeCalculator from "./Components/NRITimeCalculator";
-import NRITimeCalculator from "./Components/nri";
+import NRITimeCalculator from "./Components/NewNri"
 // import NRITimeCalculator from "./Components/test";
 function App() {
   return (
