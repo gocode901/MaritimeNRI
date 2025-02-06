@@ -1,0 +1,54 @@
+
+.financial-year-dropdown {
+    position: relative; /* For positioning the dropdown */
+    display: inline-block; /* So it doesn't take up the whole width */
+    margin-top: 20px; /* Example margin from the top */
+    margin-left: 20px; /* Example margin from the left */
+    align-items: flex-start; /* Align items to the start */
+  }
+  
+  .menu-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px; /* Optional: Rounded corners */
+  }
+  
+  .chevron {
+    margin-left: 8px;
+  }
+  
+  .menu-items {
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 0; /* Align to the left of the button */
+    width: 100%; /* Match the button width */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    max-height: 200px; /* Adjust as needed */
+    overflow-y: auto;
+    z-index: 10; /* Ensure it's above other content */
+  }
+  
+  .menu-items-list {
+    padding: 4px 0; /* Add some padding to the list */
+  }
+  
+  
+  .menu-item {
+    display: block; /* Make each item a block element */
+    width: 100%;
+    padding: 8px 12px;
+    text-align: left;
+    background-color: transparent; /* or white */
+    border: none;
+    cursor: pointer;
+    font-size: 14px; /* Match button font size */
+  }
+  
+  .menu-item:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+  }

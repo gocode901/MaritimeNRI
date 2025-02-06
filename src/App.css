@@ -1,0 +1,17 @@
+#root {
+
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  background-size: cover;
+ 
+  
+}
+
+.NriHeading{
+  font-size: 50px;
+  font-weight: 700;
+  color: #ce7777;
+  margin-top: 15px;
+
+}
