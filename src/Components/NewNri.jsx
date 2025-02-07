@@ -144,7 +144,7 @@ export default function NRITimeCalculator() {
       endDate = Math.min(endDate, fyEnd);
 
       if (startDate <= endDate) {
-        let days = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24)) + 1;
+        let days = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
         const adjustedStartDate = new Date(trip.flyOut); // Original trip start date
         if (
           trip.ongoing &&
@@ -247,8 +247,7 @@ export default function NRITimeCalculator() {
 
                 const tripLength =
                   startDate <= endDate
-                    ? Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24)) +
-                      1
+                    ? Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24))
                     : 0;
 
                 return (
