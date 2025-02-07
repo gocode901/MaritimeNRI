@@ -145,7 +145,11 @@ export default function NRITimeCalculator() {
     let totalDays = 0;
     for (const trip of trips) {
       let startDate = new Date(trip.flyOut);
-      let endDate = trip.ongoing ? new Date() : new Date(trip.flyIn);
+      let endDate = trip.ongoing
+        ? new Date()
+        : trip.flyIn
+        ? new Date(trip.flyIn)
+        : new Date();
 
       const fyStart = new Date(parseInt(selectedYear.split("-")[0]), 3, 1);
       const fyEnd = new Date(parseInt(selectedYear.split("-")[1]), 2, 31);
