@@ -1,15 +1,15 @@
-/* NRITimeCalculator.css */
+
 .nri-calculator-container {
-  margin: 20px; /* Consistent margin */
+  margin: 20px; 
   font-family: sans-serif;
 }
 
 .financial-year-dropdown {
-  margin-bottom: 10px; /* Increased margin */
+  margin-bottom: 10px; 
   display: flex;
-  justify-content: center; /* Center the dropdown */
-  width: 100%; /* Full width on mobile */
-  box-sizing: border-box; /* Include padding and border in width */
+  justify-content: center; 
+  width: 100%; 
+  box-sizing: border-box; 
   padding: 0px 10px;
 }
 
@@ -19,56 +19,56 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
-  box-sizing: border-box; /* Include padding and border in width */
+  box-sizing: border-box;
   
 }
 
 .dashboard {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center horizontally */
-  margin-bottom: 20px; /* Space below dashboard */
+  flex-direction: column; 
+  align-items: center; 
+  margin-bottom: 20px; 
 }
 
 .nri-days {
-  font-size: 2em; /* Use relative units */
+  font-size: 2em; 
   font-weight: bold;
   color: #906d6d;
-  margin: 10px 0; /* Consistent margin */
-  text-align: center; /* Center the text */
+  margin: 10px 0; 
+  text-align: center; 
 }
 
 .nri-status {
   color: #e63e19;
-  font-size: 1.2em; /* Relative size */
+  font-size: 1.2em; 
 }
 
 .days-needed {
   margin: 10px 0;
   font-size: 1.2em;
   font-weight: bold;
-  text-align: center; /* Center the text */
+  text-align: center; 
 }
 
 .NoTrip {
   font-size: 1.5em;
   color: #333;
-  margin: 20px auto; /* Center horizontally */
-  text-align: center; /* Center the text */
+  margin: 20px auto; 
+  text-align: center;
 }
 
 .trip-list {
-  width: 95%; /* Occupy most of the width */
-  max-width: 600px; /* Set a maximum width */
-  margin: 20px auto; /* Center horizontally */
-  overflow-x: auto; /* Add horizontal scroll if needed */
+  width: 95%; 
+  max-width: 600px; 
+  margin: 20px auto; 
+  overflow-x: auto; 
 }
 
 .TripListHeading {
   font-size: 1.5em;
   color: #333;
   margin-bottom: 10px;
-  text-align: center; /* Center the text */
+  text-align: center; 
 }
 
 .trip-list table {
@@ -81,29 +81,28 @@
   padding: 10px;
   border: 1px solid #ccc;
   text-align: left;
-  font-size: 0.9em; /* Smaller font size for table data */
+  font-size: 0.9em; 
 }
 
 .add-trip {
-  width: 95%; /* Occupy most of the width */
-  max-width: 500px; /* Set a maximum width */
-  margin: 20px auto; /* Center horizontally */
+  width: 95%; 
+  max-width: 500px; 
+  margin: 20px auto; 
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-sizing: border-box; /* Include padding and border in width */
+  box-sizing: border-box;
 }
 
 .add-trip label {
   margin-bottom: 5px;
-  display: block; /* Place labels above inputs */
-  text-align: center; /* Align labels to the left */
+  display: block; 
+  text-align: center;
 }
-
 .add-trip input[type="date"],
 .add-trip input[type="text"],
 .add-trip input[type="checkbox"] {
-  width: calc(100% - 110px); /* Full width input fields, adjust as needed */
+  width: calc(100% - 110px); 
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -111,8 +110,8 @@
   box-sizing: border-box;
 }
 .add-trip input[type="checkbox"] {
-  width: auto; /* Auto width for checkboxes */
-  margin-right: 5px; /* Space between checkbox and label */
+  width: auto; 
+  margin-right: 5px; 
   
 }
 
@@ -121,7 +120,7 @@
   background-color: #007bff;
   color: white;
   border: none;
-  width: 100%; /* Full width button */
+  width: 100%; 
   border-radius: 8px;
   cursor: pointer;
   box-sizing: border-box;
@@ -132,8 +131,6 @@
 }
 
 
-
-/* Media Queries for smaller screens (e.g., mobile) */
 @media (max-width: 768px) {
   .NriHeading {
     font-size: 1.5em;
@@ -141,8 +138,8 @@
 
   .trip-list th,
   .trip-list td {
-    font-size: 0.8em; /* Smaller font size for table data */
-    padding: 8px; /* Reduce padding */
+    font-size: 0.8em; 
+    padding: 8px; 
   }
 }
 
@@ -152,7 +149,7 @@
   }
   .trip-list th,
   .trip-list td {
-    font-size: 0.7em; /* Smaller font size for table data */
-    padding: 6px; /* Reduce padding */
+    font-size: 0.7em; 
+    padding: 6px;
   }
 }

@@ -1,14 +1,13 @@
 
-/* App.css */
 #root {
-  margin: 0; /* Remove default margin */
+  margin: 0; 
   padding: 1rem;
   text-align: center;
   background-size: cover;
 }
 
 .NriHeading {
-  font-size: 2em; /* Use relative units */
+  font-size: 2em; 
   font-weight: 700;
   color: #ce7777;
   margin-top: 10px;
